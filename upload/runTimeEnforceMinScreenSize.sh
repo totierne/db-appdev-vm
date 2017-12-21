@@ -84,6 +84,13 @@ echo '#!/bin/bash
 if test -f ~/Desktop/readme.txt
 then
 	cat ~/Desktop/readme.txt
+if test -f ~/ords/ords.war
+then
+if test -f ~/sqlcl/lib/oracle.dbtools.jdbcrest.jar
+then
+echo 'try JDBC REST driver: sql HRREST/oracle@http://localhost:8080/ords/hrrest/' 
+fi
+fi
 else
 	echo No default readme.txt - minium install is Oracle linux 7.3 and Oracle Database 12.2
 fi

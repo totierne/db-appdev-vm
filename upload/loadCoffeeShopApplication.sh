@@ -11,7 +11,7 @@ then
     mv /home/oracle/bin/newpdbords  /home/oracle/bin/newpdbords.x 
 #put on top - unzip
     (echo '#!/bin/bash
-if test -f /home/oracle/Desktop/Database_Track/coffeeshop
+if test -d /home/oracle/Desktop/Database_Track/coffeeshop
 then
 echo coffeeshopApp already unzipped
 else 
@@ -20,9 +20,10 @@ mv ~/coffeeshopApp.zip /home/oracle/Desktop/Database_Track/coffeeshop
 cd /home/oracle/Desktop/Database_Track/coffeeshop
 echo unzipping coffeeshopApp
 unzip coffeeshopApp.zip > coffeeshopApp.zip.log$$ 2>&1
+rm coffeeshopApp.zip
 mv Workshop_Source_Only/* Workshop_Source_Only/.DS_Store .
 chmod 755 install.sh) &
-echo if unzip successful /home/oracle/Desktop/Database_Track/coffeeshop/coffeeshopApp.zip can be removed
+#echo if unzip successful /home/oracle/Desktop/Database_Track/coffeeshop/coffeeshopApp.zip can be removed
 fi' ; cat /home/oracle/bin/newpdbords.x) > /home/oracle/bin/newpdbords
     rm /home/oracle/bin/newpdbords.x
 #put on bottom wait for unzip

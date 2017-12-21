@@ -27,14 +27,13 @@ If these files are available in the **put_files_here** directory, the build will
 * sqlcl-\*-no-jre.zip - **Oracle SQLcl**
 * apex_5\*.zip - **Oracle Application Express**
 * ords\*.zip - **Oracle REST Data Services** 
-* oracle.dbtools.jdbcrest*.jar **REST JDBC driver**
  
 Oracle Internal Files
 ---------------------
 These files may not be available publicly
 
 * demos.zip - **Oracle Hands on Labs demos**
-* reset_xmldbjson ** Reset XMLdb demos**
+* reset_xmldbjson **Reset XMLdb demos**
 * master.zip - **Oracle Sample Schema**
 * mozillablob.zip - **firefox .mozilla for (json viewer) plugins and or bookmarks**
 * storm.zip - **exp dump of non sensative material. For geo location optional demo.**

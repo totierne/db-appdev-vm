@@ -60,7 +60,7 @@ function download() {
 }
 export -f download
 
-printf "$JDBCREST\n/tmp/1/oracle.dbtools.jdbcrest.jar\n$DATABASE1URL\n/tmp/1/linuxx64_122_database.zip\n$JAVAURL\n/tmp/1/jdk8x64.tar.gz\n$SQLDEVURL\n/tmp/1/sqldev.zip\n$SQLCLURL\n/tmp/1/sqlcl.zip\n$APEXURL\n/tmp/1/apex.zip\n$ORDSURL\n/tmp/1/ords.zip\n$DEMOSURL\n/tmp/1/demos.zip\n$MOZILLABLOB\n/tmp/1/mozillablob.zip\n$MODELLER\n/tmp/1/modeler.zip\n$RESTCLIENTUI\n/tmp/1/restclient.jar\n$STORM\n/tmp/1/storm.zip\n$RESETXMLDBJSON\n/tmp/1/reset_xmldbjson\n$SAMPLESCHEMAS\n/tmp/1/master.zip" | xargs -n2 -P3 bash -c 'download "$0" "$1"'
+printf "$DATABASE1URL\n/tmp/1/linuxx64_122_database.zip\n$JAVAURL\n/tmp/1/jdk8x64.tar.gz\n$SQLDEVURL\n/tmp/1/sqldev.zip\n$SQLCLURL\n/tmp/1/sqlcl.zip\n$APEXURL\n/tmp/1/apex.zip\n$ORDSURL\n/tmp/1/ords.zip\n$DEMOSURL\n/tmp/1/demos.zip\n$MOZILLABLOB\n/tmp/1/mozillablob.zip\n$MODELLER\n/tmp/1/modeler.zip\n$RESTCLIENTUI\n/tmp/1/restclient.jar\n$STORM\n/tmp/1/storm.zip\n$RESETXMLDBJSON\n/tmp/1/reset_xmldbjson\n$SAMPLESCHEMAS\n/tmp/1/master.zip" | xargs -n2 -P3 bash -c 'download "$0" "$1"'
 if test "m$?" != "m0"
 then
   echo PROGRESS: XXXXXXXXXXXXXX parallel mv failed XXXXXXXXXXXXXX

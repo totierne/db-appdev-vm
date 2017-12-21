@@ -26,6 +26,7 @@
 
 
 . ~oracle/runTimeStartScript.sh
+dbus-launch gsettings set org.gnome.nautilus.icon-view default-zoom-level small
 mkdir -p /home/oracle/java
 mkdir -p /home/oracle/Desktop/images
 if test -f /tmp/1/jdk8x64.tar.gz

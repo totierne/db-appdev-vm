@@ -27,6 +27,7 @@ If these files are available in the **put_files_here** directory, the build will
 * sqlcl-\*-no-jre.zip - **Oracle SQLcl**
 * apex_5\*.zip - **Oracle Application Express**
 * ords\*.zip - **Oracle REST Data Services** 
+* oracle.dbtools.jdbcrest*.jar ** REST JDBC driver**
  
 Oracle Internal Files
 ---------------------

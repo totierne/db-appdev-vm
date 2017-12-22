@@ -34,7 +34,7 @@ chown oracle  ~/sqlcl/lib/oracle.dbtools.jdbcrest.jar
 fi
 if test -f /tmp/1/ords.zip
 then
-	if test -f /home/oracle/sqldeveloper/ords
+	if test -d /home/oracle/sqldeveloper/ords
 	then
 		if test -f /tmp/1/apex.zip
 		then
